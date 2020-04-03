@@ -13,6 +13,15 @@ class siswa extends CI_Controller {
         $this->load->view('siswa/dashboard');
         $this->load->view('part/footer');
     }
+      public function dataSiswa($status)
+    {
+        $this->load->model('Siswa_model');
+        $data['siswa']=$this->Siswa_model->getDataSiswa($status)->result();
+        $this->load->view('part/header');
+        $this->load->view('part/sidebarsiswa');
+        $this->load->view('siswa/dataSiswa',$data);
+        $this->load->view('part/footer');
+    }
     public function TampilPengumuman($id)
     {
         $data['pengumuman'] = $this->Admin_Model->getDetailPengumuman($id)->result();

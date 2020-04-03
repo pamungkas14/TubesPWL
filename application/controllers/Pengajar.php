@@ -13,6 +13,15 @@
             $this->load->view('pengajar/dashboard',$data);
             $this->load->view('part/footer');
         }
+        // public function dataPengajar()
+    {
+        // $this->load->model('Pengajar_model');
+        //$data['pengajar']=$this->Pengajar_model->getDataPengajar($status)->result();
+        //$this->load->view('part/header');
+        //$this->load->view('part/sidebarpengajar');
+        //$this->load->view('pengajar/dataPengajar',$data);
+        //$this->load->view('part/footer');
+    }
         public function TampilPengumuman($id)
         {
             $data['pengumuman'] = $this->pengajar_model->getDetailPengumuman($id)->result();

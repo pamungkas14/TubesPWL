@@ -42,7 +42,8 @@
                         <i class="fas fa-map-marker-alt"></i>Filter pengajar</a>
                 </li>   
                 <li>
-                    <a href="<?= base_url('siswa/filterSiswa')?>">
+                         <a href="<?=base_url()?>siswa/dataSiswa/1">
+                        
                         <i class="fas fa-map-marker-alt"></i>Filter Siswa</a>
                 </li>                 
             </ul>
@@ -86,7 +87,7 @@
                         <i class="fas fa-map-marker-alt"></i>Filter pengajar</a>
                 </li>   
                 <li>
-                    <a href="<?= base_url('siswa/filterSiswa')?>">
+                    <a href="<?=base_url()?>siswa/dataSiswa/1">
                         <i class="fas fa-map-marker-alt"></i>Filter Siswa</a>
                 </li>                 
             </ul>

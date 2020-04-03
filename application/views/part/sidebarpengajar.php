@@ -35,10 +35,10 @@
                 </li>
                 <li>
                     <a href="<?= base_url('pengajar/filterPengajar')?>">
-                        <i class="fas fa-map-marker-alt"></i>Filter pengajar</a>
+                        <i class="fas fa-map-marker-alt"></i>Filter siswa</a>
                 </li>   
                 <li>
-                    <a href="<?= base_url('pengajar/filterpengajar')?>">
+                   <a href="<?=base_url()?>Admin/dataPengajar">
                         <i class="fas fa-map-marker-alt"></i>Filter pengajar</a>
                 </li>                 
                 <li>
@@ -82,7 +82,7 @@
                         <i class="fas fa-map-marker-alt"></i>Materi</a>
                 </li>
                 <li>
-                    <a href="<?= base_url('pengajar/filterPengajar')?>">
+                     <a href="<?=base_url()?>pengajar/dataPengajar">
                         <i class="fas fa-map-marker-alt"></i>Filter pengajar</a>
                 </li>   
                 <li>

@@ -25,6 +25,12 @@ class pengajar_model extends CI_Model {
         $this->db->where('id', $id);
         return $this->db->get('el_pengajar');
     }
+     //public function getDataPengajar($status)
+       //return  $this->db->query("SELECT el_pengajar.id,el_pengajar.nip,nama, jenis_kelamin,tempat_lahir,alamat, status_id FROM el_pengajar WHERE status_id=".$status);
+        //}
+
+    
+
     public function view($table)
         {
             return  $this->db->get($table);
