@@ -13,15 +13,14 @@
             $this->load->view('pengajar/dashboard',$data);
             $this->load->view('part/footer');
         }
-        // public function dataPengajar()
-    {
-        // $this->load->model('Pengajar_model');
-        //$data['pengajar']=$this->Pengajar_model->getDataPengajar($status)->result();
-        //$this->load->view('part/header');
-        //$this->load->view('part/sidebarpengajar');
-        //$this->load->view('pengajar/dataPengajar',$data);
-        //$this->load->view('part/footer');
-    }
+        public function dataPengajar()
+        {
+            $data['pengajar']=$this->pengajar_model->view('el_pengajar')->result();
+            $this->load->view('part/header');
+            $this->load->view('part/sidebarpengajar');
+            $this->load->view('pengajar/dataPengajar',$data);
+            $this->load->view('part/footer');
+        }
         public function TampilPengumuman($id)
         {
             $data['pengumuman'] = $this->pengajar_model->getDetailPengumuman($id)->result();
@@ -65,12 +64,13 @@
             $this->load->view('part/footer');
         }
 
-        public function jadwalMapel()
+        public function jadwalMengajar($id)
         {
-            $data['nama'] = $this->session->userdata('nama');
+            $data['jadwal'] = $this->pengajar_model->jadwalPelajaran($id,
+            $this->session->userdata('id'))->result();    
             $this->load->view('part/header');
-            $this->load->view('part/sidebarpengajar',$data);
-            $this->load->view('pengajar/profile');
+            $this->load->view('part/sidebarpengajar');
+            $this->load->view('pengajar/jadwalmengajar',$data);
             $this->load->view('part/footer');
         }
 

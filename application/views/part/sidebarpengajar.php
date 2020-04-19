@@ -35,10 +35,10 @@
                 </li>
                 <li>
                     <a href="<?= base_url('pengajar/filterPengajar')?>">
-                        <i class="fas fa-map-marker-alt"></i>Filter siswa</a>
+                        <i class="fas fa-map-marker-alt"></i>Filter pengajar</a>
                 </li>   
                 <li>
-                   <a href="<?=base_url()?>Admin/dataPengajar">
+                    <a href="<?= base_url('pengajar/filterpengajar')?>">
                         <i class="fas fa-map-marker-alt"></i>Filter pengajar</a>
                 </li>                 
                 <li>
@@ -70,7 +70,7 @@
                         <i class="fas fa-table"></i>Pesan</a>
                 </li>
                 <li>
-                    <a href="<?= base_url('pengajar/jadwalMapel')?>">
+                    <a href="<?= base_url('pengajar/jadwalMengajar/1')?>">
                         <i class="far fa-check-square"></i>Jadwal Mata pelajaran</a>
                 </li>
                 <li>
@@ -82,11 +82,11 @@
                         <i class="fas fa-map-marker-alt"></i>Materi</a>
                 </li>
                 <li>
-                     <a href="<?=base_url()?>pengajar/dataPengajar">
+                    <a href="<?= base_url('pengajar/dataPengajar')?>">
                         <i class="fas fa-map-marker-alt"></i>Filter pengajar</a>
                 </li>   
                 <li>
-                    <a href="<?= base_url('pengajar/filterpengajar')?>">
+                    <a href="<?= base_url('pengajar/filtersiswa')?>">
                         <i class="fas fa-map-marker-alt"></i>Filter Siswa</a>
                 </li>                 
             </ul>
@@ -135,7 +135,7 @@
                                                 $this->session->userdata('nama');
                                                  ?></a>
                                             </h5>
-                                            <span class="email"><?= $this->session->userdata('email')?></span>
+                                            <span class="email"><?= $this->session->userdata('username')?></span>
                                         </div>
                                     </div>
                                     <div class="account-dropdown__body">
